@@ -17,7 +17,7 @@ All basic Data-Structures and Logic compiled at one place for quick review.
   - Best for Theoritical Interview and Placements
   - Handwritten Notes
   
-2. [CodeHelp](https://youtube.com/playlist?list=PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA)
+2. [CodeHelp By Babar](https://youtube.com/playlist?list=PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA)
   - Language  : **C/C++** , *Hindi*
   - Minimal Theory, Problem Solving Explained
   - Best for **Problem Solving**
