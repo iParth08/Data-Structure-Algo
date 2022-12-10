@@ -12,6 +12,7 @@ Its a stable algorithm as it preserve the order of occurence of repeating elemen
 *Space Complexity :*    O(1)         
 *Time Complexity :*     O(n^2)    
 > Best Case, Worst Case : O(n^2)  
+
 **Best Suited for :**  Less number of elements  
 
 ---
@@ -33,9 +34,10 @@ In every round, it compares two neighbour elements, and swap if prior is greater
 Its a stable algorithm as it preserve the order of occurence of repeating elements.  
 
 
-*Number of rounds :*   Number of elements - 1 
-*Space Complexity :*    O(1)         
-*Time Complexity :*     O(n^2)    
+*Number of rounds :*   Number of elements - 1   
+*Space Complexity :*    O(1)     
+*Time Complexity :*     O(n^2)  
+
 > Best Case : O(n)  
 > Worst Case : O(n^2)  
 >
