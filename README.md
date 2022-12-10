@@ -19,7 +19,8 @@ All basic Data-Structures and Logic compiled at one place for quick review.
   
 2. [CodeHelp By Babar](https://youtube.com/playlist?list=PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA)
   - Language  : **C/C++** , *Hindi*
+  - C++ Full theory explaination
   - Minimal Theory, Problem Solving Explained
   - Best for **Problem Solving**
-  - Leetcode Problems Practice
+  - Coding Ninja Problems Practice
   - Handwritten Notes
