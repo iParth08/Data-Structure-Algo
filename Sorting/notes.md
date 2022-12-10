@@ -25,10 +25,10 @@ Its a stable algorithm as it preserve the order of occurence of repeating elemen
 
 ---
 
-## 1. Bubble Sort
+## 2. Bubble Sort
 
 
-In every round, it compares two neighbour elements, and swap if prior is greater than later (for ascending order, reverse is true for descending), pushing greater element to right.  
+In every round, it compares two neighbour elements, and swap if prior is greater than later (for ascending order, reverse is true for descending), carrying greater element to right.  
  
 Its a stable algorithm as it preserve the order of occurence of repeating elements.  
 
@@ -54,10 +54,45 @@ Its a stable algorithm as it preserve the order of occurence of repeating elemen
 
 ---
 
+## 3. Insertion Sort
+
+
+In every round, it compares next element against previously sorted elements, and insert the element directly after smaller element, by shifting greater element to right.  
+ 
+Its a stable algorithm as it preserve the order of occurence of repeating elements.  
+It is a very adaptive algorithm, after every round array becomes more sorted.
+
+
+*Number of rounds :*   Number of elements - 1 
+*Space Complexity :*    O(1)         
+*Time Complexity :*     O(n^2)    
+> Best Case : O(n)  
+> Worst Case : O(n^2)  
+
+**Best Suited for :**  Very adaptive algorithm. Partially sorted array, less crowded.
+
+---
+***Algorithm***  
+
+> Step 1 : Consider **0th** element be sorted, iterate  step 2-4 for arr[1] to arr[SIZE].  
+> Step 2 : Compare current element *ELM = arr[I]* against precedessors *arr[J]*.  
+> Step 3 : If *(arr[J] > arr[I])*, shift elements to right. Else break the cycle.   
+> Step 4 : Set *arr[J+1] = ELM*. 
+> Step 5 : Exit.  
+
+---
+
 ### RESOURCES
 
 - [Selection Sort : GeeksforGeeks](https://www.geeksforgeeks.org/selection-sort/)
 - [Bubble Sort : GeeksforGeeks](https://www.geeksforgeeks.org/bubble-sort/)
+- [Insertion Sort : GeeksforGeeks](https://www.geeksforgeeks.org/insertion-sort/)
+
+***Video Lectures***
+
+- [Selection Sort : Love Babbar](https://youtu.be/UdO2NeHB46c?t=576)
+- [Bubble Sort : Apna College](https://youtu.be/xcPFUCh0jT0?t=8)
+- [Insertion Sort : Love Babbar](https://youtu.be/7kIVfVY6Axk?t=981)
 
 ### Signature
 
