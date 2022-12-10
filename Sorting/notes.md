@@ -8,11 +8,11 @@ In every interation through array, it finds minimum value in rest array and swap
 Its a stable algorithm as it preserve the order of occurence of repeating elements.  
 
 
-*Number of rounds :*   Number of elements - 1 
+*Number of rounds :*   Number of elements - 1   
 *Space Complexity :*    O(1)         
 *Time Complexity :*     O(n^2)    
-> Best Case, Worst Case : O(n^2)
-**Best Suited for :**  Less number of elements
+> Best Case, Worst Case : O(n^2)  
+**Best Suited for :**  Less number of elements  
 
 ---
 ***Algorithm***  
