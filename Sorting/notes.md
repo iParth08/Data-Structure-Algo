@@ -79,7 +79,7 @@ It is a very adaptive algorithm, after every round array becomes more sorted.
 > Step 1 : Consider **0th** element be sorted, iterate  step 2-4 for arr[1] to arr[SIZE].  
 > Step 2 : Compare current element *ELM = arr[I]* against precedessors *arr[J]*.  
 > Step 3 : If *(arr[J] > arr[I])*, shift elements to right. Else break the cycle.   
-> Step 4 : Set *arr[J+1] = ELM*. 
+> Step 4 : Set *arr[J+1] = ELM*.   
 > Step 5 : Exit.  
 
 ---
