@@ -102,4 +102,11 @@
     return e;
    ``` 
   4. **Search in a rotated Array** | [CodeStudio](https://www.codingninjas.com/studio/problems/search-in-rotated-sorted-array_630450) 
-  5. 
+   - *Approach I* - Find Pivot and then decide slope (2 step)
+   - *Approach II* -
+   - *Approach III* -
+
+
+  5. **Find Square-root** | [LeetCode](https://leetcode.com/problems/sqrtx/)
+   - 
+  6. 
