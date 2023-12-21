@@ -24,16 +24,18 @@
         else{
             end = mid - 1;
         }
+
+        mid = start + (end-start)/2;
     }
 
     //not found
-    return -1
+    return -1;
   }
   ```
 
   ## Problems
 
-  1. *First and Last Occurence*  | [CodeStudio](https://www.codingninjas.com/studio/problems/find-duplicate-in-array_1112602)
+  1. **First and Last Occurence**  | [CodeStudio](https://www.codingninjas.com/studio/problems/find-duplicate-in-array_1112602)
     ```C++
     // Technique 02 :: [MORPHISM] - Modification in Base
 
@@ -56,10 +58,10 @@
 
     return lastOcc;
     ```
-  2. *Peak Index in a Mountain Array* |  [Leetcode](https://leetcode.com/problems/peak-index-in-a-mountain-array/)
+  2. **Peak Index in a Mountain Array** |  [Leetcode](https://leetcode.com/problems/peak-index-in-a-mountain-array/)
    - A mountain has two slopes
    - Slopes are strictly monotonic here
-   - **Apply Technique 2**
+   - if there is no *return* in while loop, **start < end**
 
    ```C++
    // Technique 2 : [Morphism] -- modify array as two slopes
@@ -78,4 +80,26 @@
         }
    ``` 
   
-  3. *Pivot Element in a rotated Array* | 
+  3. **Pivot Element in a rotated Array** | [AddLink]()
+   - A rotated array breaks down into two slopes - graphically
+   - Each slope has a distinct feature against start & end
+   - apply *Technique 2* to exploit the feature
+
+   ```C++
+   while(s<e){
+        //rotated slope
+        if(arr[mid] >= arr[0]){
+            s = mid + 1;
+        }
+        //init slope
+        else if(arr[mid] < arr[size-1]){
+            e = mid;
+        }
+
+        mid = s+(e-s)/2;
+    }
+
+    return e;
+   ``` 
+  4. **Search in a rotated Array** | [CodeStudio](https://www.codingninjas.com/studio/problems/search-in-rotated-sorted-array_630450) 
+  5. 

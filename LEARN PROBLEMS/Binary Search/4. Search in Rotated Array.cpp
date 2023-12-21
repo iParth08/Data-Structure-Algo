@@ -1,4 +1,6 @@
-// When a sorted array is rotated, the elm around which it is rotated is called pivot
+// A rotated array has two different monotonic slopes -graphically
+// Just identify in which slope to search
+// 
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -12,12 +14,12 @@ int pivotInRotatedArr(int *arr, int size){
 
     while(s<e){
         //rotated slope
-        if(arr[mid] > arr[0]){
+        if(arr[mid] > arr[s]){
             s = mid + 1;
         }
 
         //init slope
-        else if(arr[mid] < arr[size-1]){
+        else if(arr[mid] < arr[e]){
             e = mid;
         }
 
@@ -26,12 +28,13 @@ int pivotInRotatedArr(int *arr, int size){
 
     return e;
 }
-
 int main(){
     //Sorted array : [1,2,3,4,5,6,7,8,9]
     //Rotated by 3 elements
 
     int rotated[9] = {7,8,9,1,2,3,4,5,6};
+    int key = 3; 
+    
     int pivotIdx = pivotInRotatedArr(rotated, 9);
     cout << "Pivot (Lower) : " << rotated[pivotIdx];
     return 0;
