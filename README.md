@@ -1,26 +1,28 @@
-# Data-Structure-Algo
+# Data Structure and Algorithms
 
-All basic Data-Structures and Logic compiled at one place for quick review.
+## Algorithms 
 
-> *Resources*
->
-> Links to Notes  
-> Video Lectures  
-> Topic-wise Special Pages  
-> **CODES AND MINIMAL NOTES IN REPOSITORY**  
 
-## Full Video Playlist
+## Data Structure
 
-1. [CodeWithHarry](https://youtube.com/playlist?list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi)  
-  - Language  : **C/C++** , *Hindi*
-  - Full theoritical with minimal code practice
-  - Best for Theoritical Interview and Placements
-  - Handwritten Notes
+### Array
+
+
+### String
+
+
+### Vector
+
+
+## Technique to Solve
+
+> **01. Naive Move** 
+
+- Apply Brute force approach
+- Force out a solution by simple traversal, loop, etc..
+- Direct application of algorithms
   
-2. [CodeHelp By Babar](https://youtube.com/playlist?list=PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA)
-  - Language  : **C/C++** , *Hindi*
-  - C++ Full theory explaination
-  - Minimal Theory, Problem Solving Explained
-  - Best for **Problem Solving**
-  - Coding Ninja Problems Practice
-  - Handwritten Notes
+> **02. Morphism**
+
+- A little modification to base algorithm
+- A more optimized and convient solution
