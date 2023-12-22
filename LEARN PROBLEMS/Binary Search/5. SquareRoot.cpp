@@ -29,6 +29,11 @@ long long int intSqrt(int num){
 }
 
 double preciseRoot(int num, int precise, int intPart){
+    //What if already a perfect root
+    if(intPart*intPart == num){
+        return intPart;
+    }
+    
     double factor = 1;
     double root;
 

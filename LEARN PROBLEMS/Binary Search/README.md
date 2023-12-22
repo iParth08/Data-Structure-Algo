@@ -86,20 +86,22 @@
    - apply *Technique 2* to exploit the feature
 
    ```C++
-   while(s<e){
-        //rotated slope
-        if(arr[mid] >= arr[0]){
-            s = mid + 1;
-        }
-        //init slope
-        else if(arr[mid] < arr[size-1]){
-            e = mid;
+
+    while(s<e){
+            //rotated slope
+            if(arr[mid] >= arr[0]){
+                s = mid + 1;
+            }
+            //init slope
+            else if(arr[mid] < arr[size-1]){
+                e = mid;
+            }
+
+            mid = s+(e-s)/2;
         }
 
-        mid = s+(e-s)/2;
-    }
+        return e;
 
-    return e;
    ``` 
   4. **Search in a rotated Array** | [CodeStudio](https://www.codingninjas.com/studio/problems/search-in-rotated-sorted-array_630450) 
    - *Approach I* - Find Pivot and then decide slope (2 step)
@@ -108,5 +110,65 @@
 
 
   5. **Find Square-root** | [LeetCode](https://leetcode.com/problems/sqrtx/)
-   - 
-  6. 
+   - Difine a Search space 
+    
+    ```C++
+
+    // Technique 3 : Search Space
+            long long int intSqrt(int num){
+            int start = 0;
+            int end = num;
+            long long int mid = start + (end-start)/2;
+            long long int approxAns = -1, square;
+
+            while(start <= end){
+                square = mid*mid; //can exceed int limit, so long long int
+
+                if(square == num)
+                    return mid; //perfect sqrt
+                else if(square < num){
+                    approxAns = mid;
+                    start = start+1;
+                }
+                else{
+                    end = mid-1;
+                }
+
+                mid = start+(end-start)/2;
+            }
+
+            return approxAns;
+        }
+
+    ```
+  
+  6. **Book Allocation** | [CodeStudio](https://www.codingninjas.com/studio/problems/ayush-gives-ninjatest_1097574)
+  7. **Painter's Partition Problem** | [CodeStudio](https://www.codingninjas.com/studio/problems/ayush-gives-ninjatest_1097574)
+  8. **Aggressive Cow Problem** | [CodeStudio](https://www.codingninjas.com/studio/problems/aggressive-cows_1082559)
+   
+   ```C++
+   // Checking conditions for value selected from SEARCH SPACE
+        bool isPossible(int *bookPages, int books, int students, int target){
+
+        int studCount = 1;
+        int pagesSum = 0;
+
+        //go through each book
+        for(int i=0; i<books; i++){
+
+            if(pagesSum + bookPages[i] <= target){
+                pagesSum += bookPages[i];
+            }
+            else{
+                studCount++;
+                if(studCount > students || bookPages[i] > target){
+                    return false;
+                }
+                pagesSum = bookPages[i];
+            }
+        }
+
+        return true;
+        }
+   ```
+  9.  
