@@ -35,3 +35,7 @@
 - Value may later be checked against **condition of generation**
 - Generator is insignificant in output, beware before modifying it. 
 
+> **04. Two-Pointer Approach** - Place and move two cursors
+
+- 
+- Works well with While-loop
