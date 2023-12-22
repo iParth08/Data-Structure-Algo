@@ -31,8 +31,8 @@ Its a stable algorithm as it preserve the order of occurence of repeating elemen
 
 In every round, it compares two neighbour elements, and swap if prior is greater than later (for ascending order, reverse is true for descending), carrying greater element to right.  
  
-Its a stable algorithm as it preserve the order of occurence of repeating elements.  
-
+- Its a **stable algorithm** as it preserve the order of occurence of repeating elements.   
+- **In-place algorithm** : it doesn't use any major data-structure rather adjacent elements.
 
 *Number of rounds :*   Number of elements - 1   
 *Space Complexity :*    O(1)     
