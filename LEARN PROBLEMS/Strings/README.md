@@ -75,7 +75,47 @@
 
 7. **String Compression** | [LeetCode](https://leetcode.com/problems/string-compression/)
 8. **Permutation in String** | [LeetCode](https://leetcode.com/problems/permutation-in-string/)
+   
+   ```C++
+   // Technique 05. SLIDING WINDOW
+
+        //Initiate window
+        int j = 0;
+        int windowSize = s1.length();
+        int keep[26] = {0};
+
+        while(j < windowSize && j < s2.length()){
+            int idx = s2[j] - 'a';
+            keep[idx]++;
+            j++;
+        }
+
+        //check if first window succeeded
+        if(isMatch(count, keep))
+            return 1;
+
+        //Slide the window, from j onwards
+        while(j < s2.length()){
+
+            //add next char
+            int nIdx = s2[j] - 'a';
+            keep[nIdx]++;
+
+            //remove old char
+            int rIdx = s2[j-windowSize] - 'a';
+            keep[rIdx]--;
+
+            j++;
+
+            //check if permutation found
+            if(isMatch(count, keep))
+                return 1;
+
+        }
+   ```
 9.  **Remove all adjacent duplicates** | [LeetCode](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/)
+10. **Replace Space with strings [in-place]** | [CodeStudio](https://www.codingninjas.com/studio/problems/replace-spaces_1172172)
+11. 
 
 
 
