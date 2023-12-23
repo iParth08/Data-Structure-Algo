@@ -20,6 +20,7 @@
     ```C++
     //Character array
     int len = strlen(str);
+    int isEqual = strcmp(s1, s2); // 0 for equal, 
 
 
     //string
@@ -62,9 +63,19 @@
     - *Hashing Like ??*
 
 6. **Remove all occurences of a substring** | [LeetCode](https://leetcode.com/problems/remove-all-occurrences-of-a-substring/)
+   
+   ```C++
+   //STL CAN SAVE EFFORTS
+
+        while(s.length() !=0 && s.find(part) < s.length()){
+            s.erase(s.find(part), part.length());
+        }
+
+   ```
+
 7. **String Compression** | [LeetCode](https://leetcode.com/problems/string-compression/)
 8. **Permutation in String** | [LeetCode](https://leetcode.com/problems/permutation-in-string/)
-9. **Remove all adjacent duplicates** | [LeetCode](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/)
+9.  **Remove all adjacent duplicates** | [LeetCode](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/)
 
 
 
