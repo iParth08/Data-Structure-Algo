@@ -41,6 +41,10 @@
       }
    ```  
 4. **Merge small sorted into big sorted array** | [LeetCode](https://leetcode.com/problems/merge-sorted-array/)
+   - Engineer all cases
+   - And think of big array as both input and output container
+   - *Apply Three Pointer*
+  
 5. **Rotate an Array** | [LeetCode](https://leetcode.com/problems/rotate-array/description/)
    - *Approach 1 : Take a temp array and perform rotated-placement*
    - *Approach 2 :*
