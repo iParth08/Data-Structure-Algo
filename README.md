@@ -1,5 +1,24 @@
 # Data Structure and Algorithms
 
+## Time Complexity
+*Time taken by an algorithm as a function of **length of input***
+- comparison is platform/system independent
+- a standard for selecting better approach
+  
+### Worst Case O(..)
+- only higher power is considered
+- represent the worst case upper bound
+  
+1. **Loops**
+   - loop in loop   : multiplication
+   - loop and loop  : addition
+  
+2. **Recursive**
+   - Convert into T-function
+     - [Tree Method](https://www.javatpoint.com/daa-recursion-tree-method)
+     - [Master Theorem](https://www.javatpoint.com/daa-master-method)
+
+[Online Judge Constraint](https://youtu.be/N89PN_uyelU?si=vRmqMCVTfvObpuKA&t=815)
 ## Algorithms 
 
 
